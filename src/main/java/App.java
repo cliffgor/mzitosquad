@@ -29,7 +29,7 @@ public class App {
 
     String description = request.queryParams("description");
     Hero newHero = new Hero(description);
-    hero.add(newHero);
+    heros.add(newHero);
 
     model.put("template", "templates/success.vtl");
     return new ModelAndView(model, layout);
