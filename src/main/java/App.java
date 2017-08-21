@@ -28,7 +28,7 @@ public class App {
     }
 
     String description = request.queryParams("description");
-    Task newHero = new Hero(description);
+    Hero newHero = new Hero(description);
     hero.add(newHero);
 
     model.put("template", "templates/success.vtl");
