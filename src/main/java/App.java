@@ -8,20 +8,22 @@ import java.util.Map;
 public class App {
 
 
-  ProcessBuilder process = new ProcessBuilder();
-  Integer port;
-  if (process.environment().get("PORT") != null) {
-      port = Integer.parseInt(process.environment().get("PORT"));
-  } else {
-      port = 4567;
-  }
-
- setPort(port);
-
 
   public static void main(String[] args) {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
+
+
+    ProcessBuilder process = new ProcessBuilder();
+    Integer port;
+    if (process.environment().get("PORT") != null) {
+        port = Integer.parseInt(process.environment().get("PORT"));
+    } else {
+        port = 4567;
+    }
+  
+   setPort(port);
+  
 
 // a route that renders the home page
     get("/", (request, response) -> {
