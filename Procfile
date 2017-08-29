@@ -1,1 +1,1 @@
-web: ./build/install/mzitosquad/bin/mzitosquad
+web: ./build/app/mzitosquad/bin/app
