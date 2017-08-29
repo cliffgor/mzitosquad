@@ -6,11 +6,11 @@ apply plugin: 'application'
 
 
 
-archivesBaseName = "app"
+archivesBaseName = "mzitosquad"
 
 version = '1.0'
 
-applicationName = "app"
+applicationName = "mzitosquad"
 
 mainClassName = "App"
 
