@@ -15,8 +15,6 @@ from your terminal.
 You can clone my repo from the link  
 
 
-
-
 # License
 The project is under license by MIT
 
